@@ -8,6 +8,11 @@ const nextConfig = {
     config.plugins.push(codeInspectorPlugin({ bundler: "webpack" }));
     return config;
   },
+  output: "export",
+  image: {
+    unoptimized: true,
+  },
+  trailingSlash: true,
 };
 
 module.exports = nextConfig;
