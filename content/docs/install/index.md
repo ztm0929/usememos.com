@@ -1,7 +1,7 @@
 ---
-title: Installation
+title: 安装
 ---
 
-Memos is designed to be self-hosted with Docker. You can run it on any server with Docker installed.
+Memos 旨在通过 Docker 进行自托管。您可以在任何安装了 Docker 的服务器上运行它。
 
-- [Container Install](/docs/install/container-install)
+- [容器安装](/docs/install/container-install)

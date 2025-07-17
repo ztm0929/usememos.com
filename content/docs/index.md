@@ -1,15 +1,15 @@
 ---
-title: What is Memos
+title: Memos 是什么
 ---
 
-**Memos** is a privacy-first, lightweight note-taking solution that allows you to effortlessly capture and share your ideas.
+**Memos** 是一个以隐私为先的轻量级笔记解决方案，让您轻松捕捉和分享想法。
 
 ![demo](/demo.png)
 
-## Key points
+## 亮点一览
 
-- **Open Source and Free to Use**: Memos believes in a future where creativity knows no limits. All features are completely free, and you will never incur charges for any content.
-- **Self-Hosting Made Easy**: Set up your instance in seconds using Docker. Enjoy flexibility, scalability, and complete control over your data and privacy.
-- **Plain Text with Markdown Support**: Create and manage your notes in plain text, utilizing Markdown for easy formatting, without the complications of rich text editing.
-- **Effortless Customization and Sharing**: Personalize your notes and share them easily with others through intuitive collaboration features.
-- **Powerful RESTful API**: Integrate seamlessly with third-party applications and unlock new possibilities through our RESTful API support.
+- **开源且免费使用**: Memos 相信创造力没有界限的未来。所有功能都是完全免费的，您永远不会为任何内容支付费用。
+- **轻松自托管**: 只需几秒钟即可使用 Docker 设置您的实例。享受灵活性、可扩展性以及对数据和隐私的完全控制。
+- **支持 Markdown 的纯文本**: 以纯文本创建和管理笔记，利用 Markdown 进行简单格式化，而无需复杂的富文本编辑。
+- **轻松定制和共享**: 通过直观的协作功能，个性化您的笔记并轻松与他人分享。
+- **强大的 RESTful API**: 与第三方应用程序无缝集成，通过我们的 RESTful API 支持解锁新可能性。
