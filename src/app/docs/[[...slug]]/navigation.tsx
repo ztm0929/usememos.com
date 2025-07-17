@@ -16,77 +16,77 @@ interface DocsNode {
 
 const DOCS_NODES: DocsNode[] = [
   {
-    text: "What is Memos",
+    text: "Memos 是什么",
     link: "/docs",
   },
   {
-    text: "Installation",
+    text: "安装",
     link: "/docs/install",
     children: [
       {
-        text: "Container Install",
+        text: "容器安装",
         link: "/docs/install/container-install",
       },
       {
-        text: "Database Drivers",
+        text: "数据库驱动",
         link: "/docs/install/database",
       },
       {
-        text: "Runtime Options",
+        text: "运行时选项",
         link: "/docs/install/runtime-options",
       },
       {
-        text: "Upgrade",
+        text: "升级",
         link: "/docs/install/upgrade",
       },
       {
-        text: "Using HTTPS",
+        text: "使用 HTTPS",
         link: "/docs/install/https",
       },
     ],
   },
   {
-    text: "Getting Started",
+    text: "快速上手",
     children: [
       {
         text: "Memo",
         link: "/docs/getting-started/memo",
       },
       {
-        text: "Tags",
+        text: "标签",
         link: "/docs/getting-started/tags",
       },
       {
-        text: "Resources",
+        text: "资源",
         link: "/docs/getting-started/resources",
       },
       {
-        text: "Content Syntax",
+        text: "内容语法",
         link: "/docs/getting-started/content-syntax",
       },
       {
-        text: "Shortcuts",
+        text: "快捷键",
         link: "/docs/getting-started/shortcuts",
       },
     ],
   },
   {
-    text: "Advanced Settings",
+    text: "高级设置",
     children: [
       {
         text: "Cloudflare R2",
         link: "/docs/advanced-settings/cloudflare-r2",
       },
       {
-        text: "Custom Style and Script",
+        text: "自定义样式和脚本",
         link: "/docs/advanced-settings/custom-style-and-script",
       },
       {
-        text: "Local storage",
+        text: "本地存储",
         link: "/docs/advanced-settings/local-storage",
       },
       {
-        text: "Single Sign-On(SSO)",
+        text: "单点登录 (SSO)",
         link: "/docs/advanced-settings/sso",
       },
       {
@@ -96,42 +96,42 @@ const DOCS_NODES: DocsNode[] = [
     ],
   },
   {
-    text: "Security",
+    text: "安全性",
     children: [
       {
-        text: "Access Tokens",
+        text: "访问令牌",
         link: "/docs/security/access-tokens",
       },
     ],
   },
   {
-    text: "Integration",
+    text: "集成",
     children: [
       {
-        text: "Telegram Bot",
+        text: "Telegram 机器人",
         link: "/docs/integration/telegram-bot",
       },
     ],
   },
   {
-    text: "Contribution",
+    text: "参与贡献",
     children: [
       {
-        text: "Community",
+        text: "社区交流",
         link: "/docs/contribution/community",
       },
       {
-        text: "Development",
+        text: "开发代码",
         link: "/docs/contribution/development",
       },
       {
-        text: "Documentation",
+        text: "文档编写",
         link: "/docs/contribution/documentation",
       },
     ],
   },
   {
-    text: "Troubleshooting",
+    text: "问题排查",
     link: "/docs/troubleshooting",
   },
 ];
