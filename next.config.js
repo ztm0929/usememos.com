@@ -9,7 +9,7 @@ const nextConfig = {
     return config;
   },
   output: "export",
-  image: {
+  images: {
     unoptimized: true,
   },
   trailingSlash: true,
