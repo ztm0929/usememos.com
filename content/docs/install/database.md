@@ -1,27 +1,33 @@
 ---
-title: Database Drivers
+title: Database 驱动
 ---
 
-Memos supports the following database types:
+Memos 支持以下数据库类型：
 
-- SQLite (default)
-- MySQL (Starting from version 0.16.1)
-- PostgreSQL (Starting from version 0.18.0)
+- SQLite（默认）
+- MySQL（从 Memos 版本 0.16.1 开始支持）
+- PostgreSQL（从 Memos 版本 0.18.0 开始支持）
 
-## Using MySQL
+## Memos 搭配 MySQL
 
-> MySQL version 8.0 or higher is recommended. Default charset and collation are `utf8mb4` and `utf8mb4_unicode_ci` respectively.
+> 推荐使用 MySQL 8.0 或更高版本。默认字符集和排序规则分别为 `utf8mb4` 和 `utf8mb4_unicode_ci`。
 
-By default, Memos continues to use SQLite as the default database driver. To switch to MySQL, you can use the following steps:
+默认情况下，Memos 使用 SQLite 作为数据库驱动程序。要更改为 MySQL，您可以使用以下步骤：
 
-- **--driver** _mysql_ : This argument specifies that Memos should use the `mysql` driver instead of the default `sqlite`.
+- **--driver** _mysql_ : 此参数指定 Memos 应使用 `mysql` 驱动程序，而不是默认的 `sqlite`。
 
-- **--dsn** _dbuser:dbpass@tcp(dbhost)/dbname_ : Provides the connection details for your MySQL server.
+- **--dsn** _dbuser:dbpass@tcp(dbhost)/dbname_ : 提供 MySQL 服务器的连接详细信息。
 
-You can start Memos with Docker using the following command:
+您可以使用以下命令通过 Docker 启动 Memos：
 
 ```shell
-docker run -d --name memos -p 5230:5230 -v ~/.memos/:/var/opt/memos neosmemo/memos:stable --driver mysql --dsn 'root:password@tcp(localhost)/memos_prod'
+docker run -d \
+  --name memos \
+  --publish 5230:5230 \
+  --volume ~/.memos/:/var/opt/memos \
+  neosmemo/memos:stable \
+  --driver mysql \
+  --dsn 'root:password@tcp(localhost)/memos_prod'
 ```
 
 Additionally, you can set these configurations via environment variables:
