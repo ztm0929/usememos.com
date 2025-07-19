@@ -2,15 +2,15 @@
 title: Container Install
 ---
 
-This document provides a basic guide on deploying Memos with Docker.
+此文档提供了使用 Docker 部署 Memos 的基本指南。
 
-## Prerequisites
+## 先决条件
 
-- **Access to a server with [Docker](https://www.docker.com) installed**
+- **拥有一台安装了 [Docker](https://www.docker.com) 的服务器**
 
 ## Docker Run
 
-To set up Memos using `docker run`, execute the following one command to start Memos:
+要使用 `docker run` 设置 Memos，请执行以下命令以启动 Memos：
 
 ```bash
 docker run -d \
@@ -21,15 +21,15 @@ docker run -d \
   neosmemo/memos:stable
 ```
 
-This command will launch Memos in the background, exposing it on port **5230**. Data will be stored in **~/.memos/**, a hidden directory inside your user's home.
+这份命令将会在后台启动 Memos，并将其暴露在 **5230** 端口。数据将存储在 **~/.memos/** 中，这是用户主目录下的一个隐藏目录。
 
-{% admonition icon="note" %}
-Memos supports advanced [runtime options](/docs/install/runtime-options) to customize the server behavior.
+{% admonition icon="note" title="注意" %}
+Memos 支持调整进阶的 [runtime 选项](/docs/install/runtime-options) 来自定义服务器行为。
 {% /admonition %}
 
 ## Docker Compose
 
-To deploy Memos using `docker compose`, create a `docker-compose.yml` file with the following configuration:
+要使用 `docker compose` 部署 Memos，请创建一个 `docker-compose.yml` 文件，并使用以下配置：
 
 ```yaml
 services:
@@ -42,14 +42,14 @@ services:
       - 5230:5230
 ```
 
-Now, execute `docker compose up -d` to initiate Memos. While editing the port and data directory is possible, only modify the first port (e.g., `8081:5230`) to specify an alternative port. The second port designates the port Memos is listening on inside the container. The same principle applies to directory paths, where the first path represents the location on your host system, and the second path signifies the directory inside the container.
+接下来，执行 `docker compose up -d` 以启动 Memos。虽然您可以修改端口和数据目录，但请仅修改前面的端口号（例如，`8081:5230` 中的 `8081`），用于指定主机暴露的端口；后面的端口表示容器内 Memos 实际监听的端口。目录路径的含义类似，前者是主机上的路径，后者是容器内部的路径。
 
-## Docker on Windows
+## 在 Windows 上使用 Docker
 
-As long as you have plenty of RAM, you can use [Docker Desktop](https://www.docker.com/products/docker-desktop/) to run Memos.
+只要您有足够的 RAM，就可以使用 [Docker Desktop](https://www.docker.com/products/docker-desktop/) 来运行 Memos。
 
-{% admonition icon="important" %}
-To store the data directly on the host, use `/c/Users/<username>/memos/` or an absolute Windows path.
+{% admonition icon="important" title="重要提示" %}
+如果希望将数据直接保存在主机上，可使用 /c/Users/<用户名>/memos/ 或任何有效的 Windows 绝对路径。
 {% /admonition %}
 
 ### Docker Run on PowerShell
